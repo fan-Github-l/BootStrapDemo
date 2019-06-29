@@ -1,1 +1,471 @@
-我是一个阅读文件
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>姿态</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="icon/iconfont.css" />
+		<script src="js/jquer.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+		<style>
+			body {
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				margin-top: 11px;
+				width: 100%;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+			}
+			
+			.swiper-container .swiper-slide {
+				max-height: 505px;
+			}
+			
+			/*.swiper-container .swiper-slide:nth-child(2n) {
+				height: 500px;
+				line-height: 500px;
+			}*/
+		</style>
+
+	</head>
+
+	<body>
+		<a name="header"></a>
+		<!--头部-->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container" >
+					<div class="row">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      </button>
+							<a href="#">
+								<img src="img/1547017195.png" class="logo-nav" />
+							</a>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+							<ul class=" nav navbar-nav navbar-right ">
+								<li>
+									<a href="# ">网站首页</a>
+								</li>
+								<li>
+									<a href="# ">品牌</a>
+								</li>
+								<li class="zhanshi cp">
+									<a href="# ">产品</a>
+									<i class="iconfont icon-down-trangle dian"></i>
+									<ul class="second-1">
+										<li class="visible-sm-block visible-xs-block">
+											<a href="#">全部</a>
+										</li>
+										<li>
+											<a href="#">吊灯</a>
+										</li>
+										<li>
+											<a href="#">吸顶灯</a>
+										</li>
+										<li>
+											<a href="#">落地灯</a>
+										</li>
+										<li>
+											<a href="#">台灯</a>
+										</li>
+										<li>
+											<a href="#">壁灯</a>
+										</li>
+										<li>
+											<a href="#">镜前灯</a>
+										</li>
+									</ul>
+								</li>
+								<li class="zhanshi fw">
+									<a href="# ">服务</a>
+									<i class="iconfont icon-down-trangle dian-1"></i>
+									<ul class="second-2">
+										<li class="visible-sm-block visible-xs-block">全部</li>
+										<li>常见问题</li>
+										<li>售后服务</li>
+										<li>下载专区</li>
+										<li>照明知识</li>
+									</ul>
+								</li>
+								<li>
+									<a href="# ">咨询</a>
+								</li>
+								<li>
+									<a href="# ">联系</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+				</div>
+				<!-- /.container-->
+			</nav>
+		</header>
+		<!--头部-->
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/1547020860.jpg" style="width: 100%"/>
+					<div class="lunbo-title lunbo-title-left" >
+						<h3>创新，缔造你所想</h3>
+						<p>Innovation, Create What You Think</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/1547022131.jpg" style="width: 100%"/>
+					<div class="lunbo-title lunbo-title-right" >
+						<h3>大道至简，智美轻奢</h3>
+						<p>Avenue To Jean , Beautiful And Luxurious</p>
+					</div>
+				</div>
+				
+			</div>
+			<!-- Add Pagination -->
+			<!-- Add Pagination -->
+			<div class="swiper-button-next lbtn">
+				<i class="iconfont icon-jiantou lunbo-icon"></i>
+			</div>
+			<div class="swiper-button-prev lbtn">
+				<i class="iconfont icon-jiantou-copy lunbo-icon"></i>
+			</div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="js/jquery-2.1-3.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				effect : 'fade',
+				loop: true,
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+	        	spaceBetween: 30,
+	        	centeredSlides: true,
+	        	autoplay: 2500,
+	        	autoplayDisableOnInteraction: false
+			});
+		</script>
+
+		<!--首页轮播-->
+		
+		
+		<!--产品中心-->
+		<div class="product">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12" style="margin-bottom: 30px;">
+						<div class="row">
+							<div class="col-sm-3 col-xs-8">
+								<h2 style="font-size: 30px;color: #4a4a4a;">产品中心</h2>
+							</div>
+							<div class="col-xs-7 product-line hidden-xs" >
+							</div>
+							<div class="col-sm-2 col-xs-4" style="text-align: right;margin-top: 27px">
+								<a href="#product.html" class="product-genduo">更多<i class="iconfont icon-gengduo_huaban-copy"></i></a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-4 col-xs-12 product-black-left" style="margin-bottom: 25px;">
+						<a class="product-black">
+							<img src="img/1547085411.jpg" class="product-black-img"/>
+							<div class="bimg-cover"></div>
+							<div class="bimg-font">
+								<div>
+									<h3 >产品</h3>
+									<span class="bimg-font-xian after1"></span>
+									<p>至简至纯，浑然天成，注重灯饰造型与功能的同时，更强调文化和内涵</p>
+									<span class="bimg-font-xian after1"></span>
+								</div>
+								
+							</div>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-6 col-xs-12 product-black-right">
+								<a class="product-black">
+									<img src="img/1547031426.png" class="product-black-img"/>
+									<div class="bimg-cover"></div>
+									<div class="bimg-font">
+										<div>
+											<h3>时空</h3>
+											<span class="bimg-font-xian after1"></span>
+											<p>"时间"是抽象概念，其内涵是无尽永前的，其外延是一切事件过程长短和发生顺序的度量。"空间"是抽象概念，其内涵是无界永在，其外延是一切物件占位大少和相对位置的度量。设计师从哲学上，对空间和时间的依存关系表达着事物的演化秩序。</p>
+											<span class="bimg-font-xian after1"></span>
+										</div>
+									</div>
+								</a>
+							</div>
+								<div class="col-md-6 col-xs-12 product-black-right">
+								<a class="product-black">
+									<img src="img/1547031784.png" class="product-black-img"/>
+									<div class="bimg-cover"></div>
+									<div class="bimg-font">
+										<div>
+											<h3 style="margin-top: 20px;">浮花</h3>
+											<span class="bimg-font-xian after1"></span>
+											<p>灵感源自石榴花，鲜艳饱满的花瓣化身为简洁流畅的线条,配合优雅的深古铜色边框，让光在空间里起伏流动,灵动自然.</p>
+											<span class="bimg-font-xian after1"></span>
+										</div>
+									</div>
+								</a>
+							</div>
+								<div class="col-md-6 col-xs-12 product-black-right">
+								<a class="product-black">
+									<img src="img/1547031670.png" class="product-black-img"/>
+									<div class="bimg-cover"></div>
+									<div class="bimg-font">
+										<div>
+											<h3>简爱</h3>
+											<span class="bimg-font-xian after1"></span>
+											<p>正方形格子在实际生活中较多见，但多个形状搭配起来既有层次感，又有艺术气息，层层叠叠、由大到小的配搭既起到拓展空间的作用，又为居家生活带去现代艺术气息；</p>
+											<span class="bimg-font-xian after1"></span>
+										</div>
+									</div>
+								</a>
+							</div>
+								<div class="col-md-6 col-xs-12 product-black-right">
+								<a class="product-black">
+									<img src="img/1547030870.png" class="product-black-img"/>
+									<div class="bimg-cover"></div>
+									<div class="bimg-font">
+										<div>
+											<h3>光意</h3>
+											<span class="bimg-font-xian after1"></span>
+											<p>在意大利有很多建筑都是圆的，米兰的足球、威尼斯的面具、比萨的斜塔、罗马的竞技场和那不勒斯的披萨，这个五个圆代表着意大利最具特色的元素，当把这五个圆组合在一起，就是“光意”系列的创意来源，这一切都来源于生活，生活就是创意。</p>
+											<span class="bimg-font-xian after1"></span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			
+		<!--产品中心-->
+		<a href="#header" class="scrollup"><i class="iconfont icon-shang"></i></a>
+		<a href="#footer" class="scrolldown"><i class="iconfont icon-xia"></i></a>
+		
+		
+		
+		<!--品牌介绍-->
+		<div class="describe">
+			<div class="container">
+				<div class="row">
+					<h2>品牌介绍</h2>
+					<p>定位于北欧极简照明艺术，坚持高品质产品为主体，倡导轻奢精英的生活态度和智美处世观，
+					        业务遍及全球130多个国家和地区，并在意大利、西班牙和法国成立跨国研发设计室。</p>
+					<a class="showmore" title="品牌介绍">
+							查看更多
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--品牌介绍-->
+		
+		
+		<!--资讯-->
+			<div class="news">
+				<div class="container">
+					<div class="row">
+						<h2 id="zixun"><a>资讯</a></h2>
+						<div class="news-xian"></div>
+						<p>News</p>
+						<div class="col-sm-6 news-ul">
+							<a>LED行业不再打产能战 专利布局成重点</a>
+							<span>2019-1-30</span>
+						</div>
+						<div class="col-sm-6 news-ul">
+							<a>LED灯具的工业设计战略</a>
+							<span>2019-1-30</span>
+						</div>
+						<div class="col-sm-6 news-ul">
+							<a>LED行业进入严冬期 中小企业如何应对</a>
+							<span>2019-1-30</span>
+						</div>
+						
+						<div class="col-sm-6 news-ul">
+							<a>当前LED照明企业的应对之道</a>
+							<span>2019-1-30</span>
+						</div>
+						<div class="col-sm-6 news-ul">
+							<a>LED照明产品节能认证流程及五大常见问题</a>
+							<span>2019-1-30</span>
+						</div>
+						<div class="col-sm-6 news-ul">
+							<a>从用户角度谈LED灯研发</a>
+							<span>2019-1-30</span>
+						</div>
+						<div class="col-sm-6 news-ul">
+							<a>你以为LED产能已过剩？先看完这些数据吧</a>
+							<span>2019-1-30</span>
+						</div>
+						<div class="col-sm-6 news-ul">
+							<a>LED行业不再打产能战 专利布局成重点</a>
+							<span>2019-1-30</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--资讯-->
+		
+		<!--尾部-->
+		<footer style="background: #e5e5e5;">
+			<div class="container" style="padding-top: 35px;padding-bottom: 10px;">
+				<div class="row">
+					<div class="col-md-8 col-sm-7 ">
+						<p class="footer-title">长沙灯具制造有限公司</p>
+						<p ><span class="phone">0874-1008611</span></p>
+						<p >地址：湖南省长沙市洋湖总部经济区</p>
+						<p >销售（周六、周日服务电话）： 0731-00000000</p>
+						<p class="">电子邮箱：email@email.mt</p>
+						<p class="">传真：0731-00000000</p>
+						<p class="">售后（技术支持服务电话）：0731-00000000（张先生）</p>
+					</div>
+					<div class="col-md-4 col-sm-5">
+						<div class="col-sm-6 col-xs-5">
+							<img src="img/1547029910.png" width="100%"/>
+							<p class="qygzh">企业公众号</p>
+						</div>
+						<div class="col-sm-6 col-xs-5 qright">
+							<img src="img/1547029910.png" width="100%"/>
+							<p class="qygzh">企业公众号</p>
+						</div>
+					</div>
+					<div class="col-xs-12 footer-me" style="text-align: center;">
+						<p >我的网站  版权所有 <span>2008-2019</span> 湘ICP备8888888 本站内容、图片、视频为网站模板演示数据，如有涉及侵犯版权，请联系我 们提供书面反馈，我们核实后会立即删除。 <br />Powered by <span style="color: #62a8ea;">MetInfo</span> 6.1.3 ©2008-2019  <span style="color: #62a8ea;">MetInfo Inc.</span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a name="footer"></a>
+		
+		<!--尾部-->
+		
+
+
+
+
+
+
+
+	</body>
+	<script>
+		var a = 0
+		var s = 0
+		$('.dian').click(function() {
+			a = a + 1
+			s = a % 2
+			if(s == 1) {
+				$(this).css("transform", "rotate(0deg)")
+				console.log($('this').siblings())
+				$('.second-1').css("display", "none")
+			} else {
+				$(this).css("transform", "rotate(180deg)")
+				$('.second-1').css("display", "block")
+			}
+
+		});
+		$(".cp").hover(
+			function() {
+				$('.dian').css("transform", "rotate(180deg)")
+				$('.second-1').css("display", "block")
+			},
+			function() {
+				$('.second-1').css("display", "none")
+				$('.dian').css("transform", "rotate(0deg)")
+			}
+		);
+		$('.dian-1').click(function() {
+			a = a + 1
+			s = a % 2
+			if(s == 1) {
+				$(this).css("transform", "rotate(0deg)")
+				console.log($('this').siblings())
+				$('.second-2').css("display", "none")
+			} else {
+				$(this).css("transform", "rotate(180deg)")
+				$('.second-2').css("display", "block")
+			 }
+
+		});
+		$(".fw").hover(
+			function() {
+				$('.dian-1').css("transform", "rotate(180deg)")
+				$('.second-2').css("display", "block")
+			},
+			function() {
+				$('.second-2').css("display", "none")
+				$('.dian-1').css("transform", "rotate(0deg)")
+			}
+		);
+	</script>
+	
+	<!--监听滚动条——隐藏上下导行按钮-->
+	<script>
+		var up=document.getElementsByClassName('scrollup')
+		var down=document.getElementsByClassName('scrolldown')
+
+		window.onscroll=function(){
+			var s=document.documentElement.scrollTop || document.body.scrollTop
+			var zixun=document.getElementById('zixun')
+			console.log(s)
+			
+			if(s<=400){
+				up[0].style.display='none'
+			}else{
+				up[0].style.display='block'
+			}
+			if (s>=4000) {
+				down[0].style.display='none'
+			}else{
+				down[0].style.display='block'
+			}
+			if(s>=1465){
+				zixun.style.opacity='1'
+				zixun.style.top='0'
+			}
+		}
+	</script>
+	
+	<!--监听滚动条——隐藏上下导行按钮-->
+	
+	
+</html>
